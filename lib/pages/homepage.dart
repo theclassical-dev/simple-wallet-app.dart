@@ -87,7 +87,7 @@ class _HomePageState extends State<HomePage> {
               ),
               SizedBox(height: 20),
               SmoothPageIndicator(controller: _controller, count: 3, effect: const ExpandingDotsEffect(),),
-              SizedBox(height: 40),
+              SizedBox(height: 20),
 
               //3 buttons send + pay +bills
               Padding(

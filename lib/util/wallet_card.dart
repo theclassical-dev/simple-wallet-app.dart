@@ -30,9 +30,14 @@ class WalletCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            const SizedBox(height: 20,),
-            Text("Balance",
-              style: TextStyle(color: Colors.white),),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text("Balance",
+                  style: TextStyle(color: Colors.white),),
+                Image.asset('assets/icons/visa.png', height: 50,),
+              ],
+            ),
             Text("\$" + balance.toString(),
               style: TextStyle(color: Colors.white, fontSize: 36, fontWeight: FontWeight.bold),),
             const SizedBox(height: 30),
