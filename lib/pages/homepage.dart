@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+import 'package:walletapp/util/icon_listtile.dart';
 import 'package:walletapp/util/wallet_card.dart';
 
 import '../util/icon_button.dart';
@@ -67,10 +68,10 @@ class _HomePageState extends State<HomePage> {
               ),
               SizedBox(height: 20),
               SmoothPageIndicator(controller: _controller, count: 3, effect: const ExpandingDotsEffect(),),
-              SizedBox(height: 25),
+              SizedBox(height: 40),
 
               //3 buttons send + pay +bills
-                Padding(
+              Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 25.0),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -86,8 +87,17 @@ class _HomePageState extends State<HomePage> {
 
                     ],
                   ),
-                )
+                ),
               //columns stats + transactions
+              Padding(
+                padding: const EdgeInsets.all(25.0),
+                child: Column(
+                  children: [
+                    IconListTile(iconImagePath: 'assets/icons/analysis.png', tileName: 'Statistics', tileSubname: 'Payments and Income'),
+                    IconListTile(iconImagePath: 'assets/icons/transaction.png', tileName: 'Transactions', tileSubname: 'Transaction History'),
+                  ],
+                ),
+              )
             ],
           ),
         ),
