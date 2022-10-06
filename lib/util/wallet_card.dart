@@ -28,13 +28,13 @@ class WalletCard extends StatelessWidget {
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            const SizedBox(height: 10,),
+            const SizedBox(height: 20,),
             Text("Balance",
               style: TextStyle(color: Colors.white),),
-            const SizedBox(height: 10,),
             Text("\$" + balance.toString(),
-              style: TextStyle(color: Colors.white, fontSize: 28),),
+              style: TextStyle(color: Colors.white, fontSize: 36, fontWeight: FontWeight.bold),),
             const SizedBox(height: 30),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,

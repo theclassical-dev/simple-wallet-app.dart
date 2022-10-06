@@ -15,18 +15,18 @@ class IconB extends StatelessWidget {
           height: 90,
           padding: EdgeInsets.all(20),
           decoration: BoxDecoration(
-              color: Colors.grey[100],
+              // color: Colors.grey[100],
               borderRadius: BorderRadius.circular(20),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.grey.shade400,
-                  blurRadius: 40,
+                  color: Colors.white,
+                  blurRadius: 30,
                   spreadRadius: 10,
                 )
               ]
           ),
           child: Center(child: Image.asset(iconImagePath),),),
-        const SizedBox(height: 10),
+        const SizedBox(height: 4),
         //text
         Text(buttonText,
           style: TextStyle(
